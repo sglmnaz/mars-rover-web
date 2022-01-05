@@ -1,5 +1,5 @@
 <app-map [missionState]="missionState"></app-map>
-<app-controls (onSubmitCommands)="handleSubmitCommands($event)"></app-controls>
+<app-controls (onSubmitCommands)="handleSubmitCommands($event)" (onReset)="handleReset()" (onRandomize)="handleRandomize()"></app-controls>
 
 
 <router-outlet></router-outlet>

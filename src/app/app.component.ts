@@ -27,4 +27,28 @@ export class AppComponent implements OnInit {
       this.missionState = res;
     });
   }
+
+  handleRandomize() {
+    this.missionService
+      .resizePlanet({ width: randomInt(2, 20), height: randomInt(2, 20) })
+      .subscribe((_) => {
+        this.missionService
+          .randomizeObstacles(randomInt(2, 20))
+          .subscribe((_) => {
+            this.missionService.resetRover().subscribe((_) => {
+              this.getMissionState();
+            });
+          });
+      });
+  }
+
+  handleReset() {
+    this.missionService.resetRover().subscribe((_) => {
+      this.getMissionState();
+    });
+  }
+}
+
+function randomInt(min: number, max: number) {
+  return Math.floor(Math.random() * (max - min) + min);
 }

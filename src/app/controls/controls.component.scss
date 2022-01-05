@@ -21,6 +21,12 @@ button {
   &#submit {
     background-image: url(../../assets/icons/submit.svg);
   }
+  &#reset {
+    background-image: url(../../assets/icons/reset.svg);
+  }
+  &#randomize {
+    background-image: url(../../assets/icons/randomize.svg);
+  }
 
   &:hover {
     filter: brightness(1.2);
@@ -33,7 +39,7 @@ button {
 .display {
   width: 260px;
   background-color: rgb(216, 216, 216);
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
   border-radius: 5px;
   padding: 1rem;
   color: black;

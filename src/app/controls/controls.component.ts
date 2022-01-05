@@ -7,6 +7,8 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 })
 export class ControlsComponent implements OnInit {
   @Output() onSubmitCommands = new EventEmitter();
+  @Output() onRandomize = new EventEmitter();
+  @Output() onReset = new EventEmitter();
   commands: string[] = [];
 
   constructor() {}
