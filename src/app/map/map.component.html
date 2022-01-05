@@ -1,0 +1,8 @@
+<div class="rows-container">
+   <div class="row" *ngFor="let row of missionState">
+      <div class="cell" *ngFor="let cell of row">
+         <div id="rover" [className]="cell.heading ?? ''" *ngIf="cell.rover"></div>
+         <div class="obstacle" *ngIf="cell.obstacle"></div>
+      </div>
+   </div>
+</div>

@@ -1,0 +1,14 @@
+<div class="display">
+   <span style="flex: 1;">{{commands | arrayToString}}</span>
+   <button class="clear" (click)="commands = []">X</button>
+</div>
+
+<div style="display: flex; gap: 10px; align-items: center;">
+   <button id="left" (click)="handleClick('L')"></button>
+   <div style="display: flex; flex-direction: column; gap: 10px;">
+      <button id="forward" (click)="handleClick('F')"></button>
+      <button id="submit" (click)="submitCommands()"></button>
+      <button id="backward" (click)="handleClick('B')"></button>
+   </div>
+   <button id="right" (click)="handleClick('R')"></button>
+</div>

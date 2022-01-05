@@ -1,0 +1,43 @@
+.rows-container {
+  display: flex;
+  flex-direction: column-reverse;
+  filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.376));
+  .row {
+    display: flex;
+    flex-direction: row;
+    * {
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .cell {
+      width: 60px;
+      height: 60px;
+      border: 1px solid #bb4b2f;
+      background-image: url(../../assets/icons/cell.svg);
+
+      .obstacle {
+        background-image: url(../../assets/icons/obstacle.svg);
+        width: 100%;
+        height: 100%;
+      }
+      #rover {
+        background-image: url(../../assets/icons/rover.svg);
+        width: 100%;
+        height: 100%;
+
+        &.N {
+          transform: rotate(0deg);
+        }
+        &.S {
+          transform: rotate(180deg);
+        }
+        &.E {
+          transform: rotate(90deg);
+        }
+        &.W {
+          transform: rotate(270deg);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+button {
+  border-radius: 5px;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &#forward {
+    background-image: url(../../assets/icons/forward.svg);
+  }
+  &#backward {
+    background-image: url(../../assets/icons/backward.svg);
+  }
+  &#left {
+    background-image: url(../../assets/icons/left.svg);
+  }
+  &#right {
+    background-image: url(../../assets/icons/right.svg);
+  }
+  &#submit {
+    background-image: url(../../assets/icons/submit.svg);
+  }
+
+  &:hover {
+    filter: brightness(1.2);
+  }
+  &:active {
+    filter: brightness(0.8);
+  }
+}
+
+.display {
+  width: 260px;
+  background-color: rgb(216, 216, 216);
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  padding: 1rem;
+  color: black;
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+}
+
+.clear {
+  font-size: 2rem;
+  width: 2.4rem;
+  height: 2.4rem;
+}

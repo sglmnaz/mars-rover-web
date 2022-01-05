@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+
+* {
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: normal;
+  border-radius: 0;
+  background-color: transparent;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.8rem;
+  background-color: #272c30;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
